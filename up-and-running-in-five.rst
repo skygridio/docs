@@ -54,7 +54,9 @@ In the devices panel, turn on logging for this device
 Push some data
 ======================
 
-Now we have created a device in Skygrid, we can push data to SkyGrid. Normally, this would be done by coding a device. Instead, we are going to simulate the device pushing up data by using a program called `Postman <https://www.getpostman.com/>`, which is used to interact with the REST API. More detail on how to construct queries can be found here - to perform just one device update though, set the following parameters:
+Now we have created a device in Skygrid, we can push data to SkyGrid. Normally, this would be done by coding a device. Instead, we are going to simulate the device pushing up data by using a program called `Postman`_, which is used to interact with the REST API. More detail on how to construct queries can be found here - to perform just one device update though, set the following parameters:
+
+.. _Postman: https://www.getpostman.com
 
 * Copy the API endpoint into the POST field https://api.skygrid.io/d/your_device_key_here
 * In the Headers field, set one of the headers to Content-Type - application/json
@@ -106,9 +108,14 @@ Above, we created a simple HTML page that displayed some data. In this section w
 
 Let's go through the code.
 
-Lines 1-56 are related to the Sylesheet for the page, and including some Javascript libraries that we need. We won't go into too much detail about this, if you're completely unfamiliar with HTML and CSS then perhaps `this <https://www.khanacademy.org/computing/computer-programming/html-css>` page may be informative for you.
+Lines 1-56 are related to the Sylesheet for the page, and including some Javascript libraries that we need. We won't go into too much detail about this, if you're completely unfamiliar with HTML and CSS then perhaps `Link this`_ page may be informative for you.
 
-We're only concerned with one line in this section, line 10. This line imports the Skygrid Javascript SDK from our server. You can download and include this locally as well, but for now we'll just import it from the internet.::
+.. _Link this: https://www.khanacademy.org/computing/computer-programming/html-css
+
+We're only concerned with one line in this section, line 10. This line imports the Skygrid Javascript SDK from our server. You can download and include this locally as well, but for now we'll just import it from the internet.
+
+::
+
   <!-- Skygrid sdk -->
 	<script src="https://cdn.skygrid.io/sdk/js/skygrid-latest.min.js"></script>
 
@@ -180,6 +187,7 @@ NOTE: If your application doesn't appear to be working, you can open up the debu
 When subscribe is called, any time a piece of data in the project changes, the function that we pass it in as an argument will be called - you must pass subscribe a function with two arguments, device and changes.
 
 The contents of the function we pass into subscribe will be called every time a piece of data in this project changes. This allows us to update all the values on the page, and trigger simple events such as the animation. This line::
+
 	$("#humidity").text(device.get('humidity'));
 
 Is a call to the Javascript library called JQuery (which we also imported, you can see so at the top of the file). This line searches the HTMl for the element with id="humidity" and changes the text in this element to whatever we pass that function. In this case, we wish to change the text to the latest value for humidity, which we get from SKygrid using the function device.get(). The parameter we wish to use must match the parameters as described in the schema.

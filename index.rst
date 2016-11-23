@@ -21,4 +21,3 @@ Contents:
    rest-api-guide
    javascript-sdk-guide
    device-sdk-guide
-   fillerpage

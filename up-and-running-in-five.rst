@@ -58,7 +58,7 @@ Now we have created a device in Skygrid, we can push data to SkyGrid. Normally, 
 
 .. _Postman: https://www.getpostman.com
 
-* Copy the API endpoint into the POST field https://api.skygrid.io/d/your_device_key_here
+* Copy the API endpoint into the PUT field https://api.skygrid.io/d/your_device_key_here
 * In the Headers field, set one of the headers to Content-Type - application/json
 	.. image :: images/postman1.PNG
 * In the body of the request, choose 'raw' for encoding type and then copy paste the following JSON into the text block

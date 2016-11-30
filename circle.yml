@@ -25,4 +25,4 @@ deployment:
   production:
     branch: master
     commands:
-      - aws s3 sync . s3://docs.skygrid.io/
+      - aws s3 sync ./_build/html s3://docs.skygrid.io/

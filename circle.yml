@@ -3,7 +3,7 @@ machine:
     Australia/Sydney
 
   python:
-    version: 3 # double check
+    version: 3.5.2
 
 general:
   branches:

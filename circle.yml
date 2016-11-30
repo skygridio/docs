@@ -1,0 +1,28 @@
+machine:
+  timezone:
+    Australia/Sydney
+
+  python:
+    version: 3 # double check
+
+general:
+  branches:
+    only:
+      - master
+
+dependencies:
+  pre:
+    - pip3 install sphinx
+    - pip3 install sphinx_rtd_theme
+  override:
+    - make html
+
+test:
+  override:
+    - echo 1
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - aws s3 sync . s3://docs.skygrid.io/

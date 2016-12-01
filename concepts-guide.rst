@@ -35,7 +35,7 @@ SkyGrid Concepts
 =================
 First we will look at a typical IoT solution architecture, and the components involved. Then we describe the SkyGrid domain model.
 
-.. image :: images/SkyGridPic1.PNG
+.. image :: images/SkyGridPic1.png
 
 -----------
 Device

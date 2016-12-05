@@ -1,4 +1,4 @@
 Device SDK Guide
 _________________
 
-Baloney!
+Coming soon

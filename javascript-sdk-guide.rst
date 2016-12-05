@@ -1,4 +1,4 @@
 Javascript SDK Guide
 _____________________
 
-Salami!
+Coming soon

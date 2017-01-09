@@ -87,12 +87,14 @@ The other side of your project is the webpage, software or application which nee
 
 :download:`Download this HTML file <downloads/simple-app.html>` and open it in your favorite text editor. Note, save the page as type "Webpage, HTML Only" (and not as type "WebPage, Complete").
 
-On line 96 of the HTML file, edit the code to include your own project ID
+On line 96 of the HTML file, edit the code to include your own project ID, and on line 98 put your device id. Both of these numbers are found through the SkyGrid dashboard.
 
 ::
 
-	// Create a new SkyGrid project object
-	var project = SkyGrid.project('aFFzyVKi');
+    // Create a new SkyGrid project object *** ADD YOUR PROJECT_ID HERE
+    var project = SkyGrid.project('aFFzyVKi');                          
+    // Use the project object to fetch a device object *** ENTER YOUR DEVICE_ID HERE
+    var myDevice = project.device('').fetch().then((device) => {
 
 Once that has been set, open the HTML file in your web browser and use Postman to push some new data to SkyGrid.
 

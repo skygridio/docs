@@ -18,6 +18,7 @@ Contents:
 
    concepts-guide
    up-and-running-in-five
+   a-bit-more-detail
    rest-api-guide
    javascript-sdk-guide
    device-sdk-guide

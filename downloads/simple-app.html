@@ -91,16 +91,34 @@
       console.log(message);
     }
 
-    let client = new SkyGrid('YCZkQ0tD');
-    client.subscribe(function(device, changes) {
 
+    // Create a new SkyGrid project object *** ADD YOUR PROJECT_ID HERE
+    var project = SkyGrid.project('');                          
+    // Use the project object to fetch a device object *** ENTER YOUR DEVICE_ID HERE
+    var myDevice = project.device('').fetch().then((device) => {
+      
+      // Apply a subscription to any changes (updated in real-time via websockets)
+      device.subscribe(function(changes) {
+        // When a change comes through, update the page
+        update(device);
+      });
+
+      // Apply first update to the page
+      update(device);
+
+    });
+
+
+    function update(device) {
+      // Update 
       $("#temp").text(device.get('temperature'));
       $("#sun").stop().animate({"font-size" : "260px"}).delay(50).animate({"font-size" : "240px"});
 
       $("#humidity").text(device.get('humidity'));
       $("#serial").text(device.get('serial'));
       
-    });
+    };
+  
     </script>
 
   </body>

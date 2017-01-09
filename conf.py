@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Skygrid documentation build configuration file, created by
+# SkyGrid documentation build configuration file, created by
 # sphinx-quickstart on Wed Nov 23 13:01:00 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -49,16 +49,16 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Skygrid'
-copyright = '2016, Helian Systems'
-author = 'Helian Systems'
+project = 'SkyGrid'
+copyright = '2017, SkyGrid'
+author = 'SkyGrid'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '0'
+version = '1.0.1'
 # The full version, including alpha/beta/rc tags.
 release = '0'
 
@@ -136,7 +136,7 @@ html_theme = 'sphinx_rtd_theme'
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = 'Skygrid v0'
+# html_title = 'SkyGrid v0'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -236,7 +236,7 @@ html_static_path = ['_static']
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Skygriddoc'
+htmlhelp_basename = 'SkyGriddoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -262,8 +262,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Skygrid.tex', 'Skygrid Documentation',
-     'Helian Systems', 'manual'),
+    (master_doc, 'SkyGrid.tex', 'SkyGrid Documentation',
+     'SkyGrid', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -304,7 +304,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'skygrid', 'Skygrid Documentation',
+    (master_doc, 'skygrid', 'SkyGrid Documentation',
      [author], 1)
 ]
 
@@ -319,8 +319,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Skygrid', 'Skygrid Documentation',
-     author, 'Skygrid', 'One line description of project.',
+    (master_doc, 'SkyGrid', 'SkyGrid Documentation',
+     author, 'SkyGrid', 'One line description of project.',
      'Miscellaneous'),
 ]
 

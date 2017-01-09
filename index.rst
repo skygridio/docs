@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Skygrid Overview
+SkyGrid Overview
 ===================================
 SkyGrid is a platform for handling projects that require connecting up thousands of devices to the cloud for centralized management with an API for the physical world. SkyGrid makes development for the real world easy.
 

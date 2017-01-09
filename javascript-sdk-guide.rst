@@ -1,4 +1,5 @@
 Javascript SDK Guide
 _____________________
 
-Coming soon
+See `Javascript API documentation
+<./js/>`_.

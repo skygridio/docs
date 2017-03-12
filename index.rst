@@ -21,4 +21,5 @@ Contents:
    a-bit-more-detail
    rest-api-guide
    javascript-sdk-guide
+   java-sdk-guide
    device-sdk-guide

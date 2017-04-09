@@ -23,3 +23,5 @@ Contents:
    javascript-sdk-guide
    java-sdk-guide
    device-sdk-guide
+   sigfox-guide
+   lora-guide
